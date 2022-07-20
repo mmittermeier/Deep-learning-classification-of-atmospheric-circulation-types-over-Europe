@@ -1,0 +1,2 @@
+# Deep-learning-classification-of-atmospheric-circulation-types-over-Europe
+This repository accompanies the publication "A Deep Learning based Classification of Atmospheric Circulation Types over Europe: Projection of Future Changes in a CMIP6 Large Ensemble" in Environmental Research Letters by Mittermeier, M., Weigert, M., Rügamer, D., Küchenhoff, H. &amp; Ludwig, R. (2022). This repository provides the code to apply the trained deep ensemble described in this publication to climate model data.
