@@ -1,0 +1,41 @@
+Training Results of final model trained on entire dataset: 
+ 
+Train Accuracy: 43.31
+
+ 
+Macro F1-score: 41.47
+Average Precision: 40.56
+Average Recall: 46.12
+
+ 
+F1-scores per class (test set): 
+ 
+WA: 45.44
+WZ: 49.97
+WS: 46.2
+WW: 40.66
+SWA: 38.23
+SWZ: 37.55
+NWA: 40.08
+NWZ: 41.32
+HM: 52.07
+BM: 43.98
+TM: 42.15
+NA: 31.15
+NZ: 45.62
+HNA: 50.19
+HNZ: 33.09
+HB: 52.92
+TRM: 28.54
+NEA: 41.34
+NEZ: 36.54
+HFA: 46.56
+HFZ: 34.59
+HNFA: 41.68
+HNFZ: 39.03
+SEA: 42.77
+SEZ: 42.43
+SA: 44.83
+SZ: 37.49
+TB: 46.88
+TRW: 29.35
