@@ -1,0 +1,50 @@
+Definitions: 
+ 
+
+ --- 0. general --- 
+machine: cluster
+variables: ['mslp', 'z500']
+flipping: on
+aggregated data: on
+domain: ClimEx_agg
+
+ --- 1. gwl selection --- 
+gwl selection: all
+number of classes: 30
+
+ --- 2. CV --- 
+split method: random_yearly
+
+ --- 3. seasonal adjustment & z-transformation --- 
+z-transformation: on
+seasonal adjustment: on
+
+ --- 4. spatial & temporal resolution --- 
+temp_res: daily
+spatial_res: coarse
+
+ --- 5. network style --- 
+network style name: liu
+batch size: 128
+number of epochs: 35
+early stopping: on
+es_patience: 6
+network architecture: 
+Conv1: 5x 5-8etc. 
+activation function: relu
+activation function out: softmax
+loss function: categorical_crossentropy
+
+ --- 6. hpt --- 
+tuning method: none
+
+ --- 7. label smoothing --- 
+run label smoothing: off
+
+ --- 8. further options --- 
+smaller sample: off
+sample size: all
+selective trainingset: on
+border year: 1980
+
+ ------- 
