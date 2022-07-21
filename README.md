@@ -37,7 +37,8 @@ all the code in a subdirectory named "code"
         output: circulation type classifications for the daily input data
         
 ## Acknowledgements: 
-biggest thanks goes to Aaron Banze and Julia Miller (LMU) for their support      
+* ERA-40 reanalysis data is derived from the European Centre for Medium-Range Weather Forecasts (ECMWF): www.ecmwf.int/
+* biggest thanks goes to Aaron Banze and Julia Miller (LMU) for their support      
     
 ## Copyright: 
 Magdalena Mittermeier, Ludwig-Maximilians Universität (LMU) München, Munich
