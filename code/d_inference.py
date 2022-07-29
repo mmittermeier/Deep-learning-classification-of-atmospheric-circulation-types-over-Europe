@@ -101,10 +101,10 @@ def inference_universal(wdir, network_path, model_name,
     for full, file in zip(fulllist, filelist):
 
         # Get pendant with second variable "z500"
-        file_split = full.split("/")
+        file_split = full.split(os.sep)
         filename_split = file[3:len(file)]
 
-        pendant_file_dir = '/'.join(file_split[0: len(file_split) - 1])
+        pendant_file_dir = os.sep.join(file_split[0: len(file_split) - 1])
 
         # Check if pendant file with zg variable was downloaded and get the complete file name
         # This method accounts for different naming of pendant file if not all years for zg were downloaded
