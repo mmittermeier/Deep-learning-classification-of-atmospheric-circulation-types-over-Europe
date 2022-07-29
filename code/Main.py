@@ -3,10 +3,11 @@
 Created on Fri Nov 26 15:55:23 2021
 
 Des.: setup script for the application of the deep learning classifier to new climate model data
-publication: Mittermeier, M., Weigert, M., Rügamer, D., Küchenhoff, H. & Ludwig,
-    R. (2022): A Deep Learning based Classification of Atmospheric Circulation Types
-    over Europe: Projection of Future Changes in a CMIP6 Large Ensemble. Environmental
-    Research Letters. accepted.
+publication: Mittermeier, M., Weigert, M., Rügamer, D., Küchenhoff, H. & Ludwig, R. (2022): 
+    A Deep Learning based Classification of Atmospheric Circulation Types over Europe: 
+    Projection of Future Changes in a CMIP6 Large Ensemble. 
+    Environmental Research Letters. 17. doi: 10.1088/1748-9326/ac8068.
+    URL: https://iopscience.iop.org/article/10.1088/1748-9326/ac8068
 Necessary data:
     following variables of the climate model to which the classifier is to be applied:
     (for demonstration/testing purposes CanESM2 data for these variables can be downloaded with this script)
@@ -18,7 +19,7 @@ Example: this script uses one member of the CanESM2-LE (Canadian Earth System Mo
     for the application to other climate datasets: first download the required data; then disable the first step "run_download_CanESM2"
 Python requirements:
     - python version 3.6
-    - packages: numpy, xarray (version 0.15.1. or later), os, fnmatch, xesmf
+    - packages: numpy, xarray (version 0.15.1. or later), os, fnmatch, xesmf, pickle, urllib, datetime, sklearn, matplotlib, pandas, sys
     - note: run_regrid works only on UNIX-systems (Linux, DOS)
 Usage: please define your working directory at the beginning containing the reference file for regridding and
        all the code in a subdirectory named "code"
