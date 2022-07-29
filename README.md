@@ -6,7 +6,7 @@ Please use following citation to cite this work: Mittermeier, M., Weigert, M., R
 
 ## Python requirements:
     - python version 3.6
-    - packages: numpy, xarray (version 0.15.1. or later), os, fnmatch, xesmf
+    - packages: numpy, xarray (version 0.15.1. or later), os, fnmatch, xesmf, pickle, urllib, datetime, sklearn, matplotlib, pandas, sys
     - note: "regridding_universial" in "c_regridding" only runs on UNIX-systems (Linux, DOS)
 
 ## Necessary data:
