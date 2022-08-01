@@ -10,7 +10,7 @@ copyright: Magdalena Mittermeier, Ludwig-Maximilians Universität (LMU) München
 citation: Mittermeier, M., Weigert, M., Rügamer, D., Küchenhoff, H. & Ludwig,
     R. (2022): A Deep Learning based Classification of Atmospheric Circulation Types
     over Europe: Projection of Future Changes in a CMIP6 Large Ensemble. Environmental
-    Research Letters. accepted.
+    Research Letters. 17. doi: 10.1088/1748-9326/ac8068.
 @author: m.mittermeier@lmu.de
 """
 
