@@ -148,6 +148,11 @@ def run_ensemble_weighted_mean(path_results, path_confusion, path_out, name_data
     # Loop over runs/families to load data and calculate y_pred_class
     for run_family in [filename for filename in os.listdir(os.path.join(path_results, "1_final-model_ppc_"+network_version+"1")) if filename.startswith("Probability")]:
         print("run_family: ", run_family)
+        filename_out = "Inference_deep-ensemble-mean" + run_family[11:]
+        outpathdir = os.path.join(path_out + os.sep + "deep_ensemble_mean")
+        if not os.path.exists(outpathdir):
+            os.makedirs(outpathdir)
+            
         # Read all files:
         ensemble = read_results_files(path_results, period, years, member, name_dataset, run_family, network_version, num_inits)
         print("get fscores")
@@ -155,4 +160,4 @@ def run_ensemble_weighted_mean(path_results, path_confusion, path_out, name_data
 
         y_pred_class = deep_ensemble_weighted_mean(ensemble, fscores)
         years = run_family[-28:-11]
-        np.save(path_out + os.sep + "Inference_" + name_dataset + "_all_deep-ensemble-mean_y_pred_3dr_day_" + period + "_r" + member + "i1p1f1_gr_" + years + "_regrid.npy", y_pred_class)
+        np.save(outpathdir + os.sep + filename_out, y_pred_class)
