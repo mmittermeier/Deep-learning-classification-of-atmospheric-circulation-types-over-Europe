@@ -159,5 +159,4 @@ def run_ensemble_weighted_mean(path_results, path_confusion, path_out, name_data
         fscores = read_confusion_files(path_confusion, class_names, num_inits)
 
         y_pred_class = deep_ensemble_weighted_mean(ensemble, fscores)
-        years = run_family[-28:-11]
         np.save(outpathdir + os.sep + filename_out, y_pred_class)
